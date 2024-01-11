@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <img src="../../../assets/icon/logo.png" alt="" />
+    <h1>Zen Waves</h1>
+  </div>
+
+  <div class="body">
+    <ion-input placeholder="user@email.com">
+      <ion-icon slot="start" name="mail-outline" aria-hidden="true"></ion-icon>
+      <ion-button fill="clear" slot="end" aria-label="Show/hide"> </ion-button>
+    </ion-input>
+
+    <ion-input placeholder="********" style="margin-bottom: 50px;">
+      <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="eye" aria-hidden="true" color="medium"></ion-icon>
+      </ion-button>
+    </ion-input>
+
+    <ion-button class="controlls" shape="round" color="success">
+      login
+    </ion-button>
+
+    <ion-button class="controlls" shape="round" color="medium">
+      entrar como convidado
+    </ion-button>
+
+    <span>
+      <p>
+        ou
+      </p>
+    </span>
+
+    <ion-button class="controlls" shape="round" color="primary">
+      cadastrar
+    </ion-button>
+
+    <ion-button class="controlls" shape="round" color="danger">
+      sair
+    </ion-button>
+  </div>
+</ion-content>
