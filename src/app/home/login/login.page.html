@@ -5,19 +5,19 @@
   </div>
 
   <div class="body">
-    <ion-input placeholder="user@email.com">
+    <ion-input placeholder="user@email.com" [(ngModel)]="credenciais.email" name="email">
       <ion-icon slot="start" name="mail-outline" aria-hidden="true"></ion-icon>
       <ion-button fill="clear" slot="end" aria-label="Show/hide"> </ion-button>
     </ion-input>
 
-    <ion-input placeholder="********" style="margin-bottom: 50px;">
+    <ion-input type="{{ showPassword ? 'text' : 'password' }}" placeholder="********" style="margin-bottom: 50px;" [(ngModel)]="credenciais.senha" name="senha">
       <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
-      <ion-button fill="clear" slot="end" aria-label="Show/hide">
-        <ion-icon slot="icon-only" name="eye" aria-hidden="true" color="medium"></ion-icon>
+      <ion-button fill="clear" slot="end" aria-label="Show/hide" (click)="togglePasswordVisibility()">
+        <ion-icon name="{{ showPassword ? 'eye-off' : 'eye' }}" slot="end"></ion-icon>
       </ion-button>
     </ion-input>
 
-    <ion-button class="controlls" shape="round" color="success">
+    <ion-button class="controlls" shape="round" color="success" (click)="login()">
       login
     </ion-button>
 
@@ -31,7 +31,7 @@
       </p>
     </span>
 
-    <ion-button class="controlls" shape="round" color="primary">
+    <ion-button class="controlls" shape="round" color="primary" (click)="signup()">
       cadastrar
     </ion-button>
 

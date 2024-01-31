@@ -1,5 +1,5 @@
 ion-content{
-  height: 100px;
+  height: 100%;
   width: 100%;
 
   .body{
@@ -10,7 +10,7 @@ ion-content{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 220px;
+    padding-top: 30%;
 
     .logo{
       height: 220px;
@@ -22,8 +22,8 @@ ion-content{
       border-radius: 100%;
 
       img{
-        height: 200px;
-        width: 200px;
+        height: 90%;
+        width: 90%;
       }
     }
 
@@ -35,8 +35,9 @@ ion-content{
     }
 
     ion-button{
-      margin-top: 150px;
-      width: 300px;
+      margin-top: 10%;
+      width: 80%;
+      height: 7%;
       font-size: 18px;
     }
 
@@ -46,7 +47,7 @@ ion-content{
       font-size: 16px;
       font-weight: 400;
       position: absolute;
-      bottom: 20px;
+      bottom: 5%;
     }
   }
 }

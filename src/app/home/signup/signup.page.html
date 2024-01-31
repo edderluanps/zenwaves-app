@@ -1,13 +1,52 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">signup</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="header">
+    <img src="../../../assets/icon/logo.png" alt="" />
+    <h1>Zen Waves</h1>
+  </div>
+
+  <div class="body">
+
+    <form [formGroup]="formGroup">
+
+      <ion-list>
+
+        <ion-item color="#D9D9D9">
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input placeholder="" id="" formControlName="nome"></ion-input>
+        </ion-item>
+
+        <ion-item color="#D9D9D9">
+          <ion-label position="floating">Nome de Usuário</ion-label>
+          <ion-input placeholder="@nomeusuario" id="" formControlName="nomeUsuario"></ion-input>
+        </ion-item>
+
+        <ion-item color="#D9D9D9">
+          <ion-label position="floating">e-mail</ion-label>
+          <ion-input placeholder="" id="" formControlName="email"></ion-input>
+        </ion-item>
+
+        <ion-item color="#D9D9D9">
+          <ion-label position="floating">e-mail</ion-label>
+          <ion-input placeholder="" id="" formControlName="senha"></ion-input>
+        </ion-item>
+
+        <ion-item color="#D9D9D9">
+          <ion-label position="floating">Telefone</ion-label>
+          <ion-input placeholder="" id="" formControlName="telefone"></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+    </form>
+
+    <ion-button class="controlls" shape="round" color="success" (click)="cadastrar()" routerDirection="forward">
+      Cadastrar
+    </ion-button>
+
+    <ion-button class="controlls" shape="round" color="danger" routerLink="/" routerDirection="back">
+      Voltar
+    </ion-button>
+
+  </div>
+
 </ion-content>
