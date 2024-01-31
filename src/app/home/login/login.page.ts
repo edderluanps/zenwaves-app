@@ -39,6 +39,7 @@ export class LoginPage {
   }
 
   login(){
+    this.router.navigate(["/homepage"]);
     this.presentAlert("Login", 'Bem vindo(a)', "");
     this.credenciais.email = '';
     this.credenciais.senha = '';
