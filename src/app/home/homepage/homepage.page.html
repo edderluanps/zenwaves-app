@@ -1,13 +1,64 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>homepage</ion-title>
-  </ion-toolbar>
+<ion-header>
+  <ion-icon name="search-outline"></ion-icon>
+  <ion-label>pesquisa</ion-label>
+  <ion-icon name="person-circle-outline"></ion-icon>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">homepage</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <div class="box">
+
+    <div class="faixas">
+      <ion-label>
+        faixas
+      </ion-label>
+
+      <ion-card>
+        <div class="swipper"></div>
+      </ion-card>
+    </div>
+
+    <div class="albuns">
+      <ion-label>
+        albuns
+      </ion-label>
+
+      <ion-card>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </ion-card>
+    </div>
+
+    <div class="playlists">
+      <ion-label>
+        playlists
+      </ion-label>
+
+      <ion-card>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </ion-card>
+    </div>
+
+  </div>
+
 </ion-content>
+
+<ion-footer>
+  <ion-button color="none" routerLink="/homepage" routerDirection="back">
+    <ion-icon name="home-outline"></ion-icon>
+  </ion-button>
+  <ion-button color="none" routerLink="/pacotes" routerDirection="forward">
+    <ion-icon name="volume-high-outline"></ion-icon>
+  </ion-button>
+  <ion-button color="none" routerLink="/blog" routerDirection="forward">
+    <ion-icon name="albums-outline"></ion-icon>
+  </ion-button>
+  <ion-button color="none" routerLink="/perfil" routerDirection="forward">
+    <ion-icon name="list-circle-outline"></ion-icon>
+  </ion-button>
+</ion-footer>
